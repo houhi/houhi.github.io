@@ -23,24 +23,33 @@ short_bio: >-
   <p>My research focuses on <strong>generative recommendation</strong> and
   <strong>LLM-based recommender systems</strong>. I am particularly interested in semantic IDs,
   efficient model architectures, reinforcement learning post-training, and personalized multi-agent systems.</p>
-  <p>I am currently a research intern at <strong>Tencent Ads</strong>. Previously, I worked on
-  generative recommendation at <strong>JD.com</strong>. My work connects academic research with
+  <p>I am currently a research intern at <strong>Tencent Ads</strong>, mentored by
+  <a href="https://scholar.google.com/citations?user=aKJaW7cAAAAJ">Xingxuan Zhou</a>.
+  Previously, I worked on generative recommendation at <strong>JD.com</strong>, mentored by
+  <a href="https://scholar.google.com/citations?user=pkY_HogAAAAJ">Yanyan Zou</a>.
+  My work connects academic research with
   recommendation systems at an industrial scale.</p>
 education:
   - name: University of Electronic Science and Technology of China
     short_name: UESTC
+    logo: /assets/images/logos/uestc.png
+    logo_key: uestc
     position: M.S. in Computer Science and Technology
     date: Sep. 2024 – Jul. 2027 (expected)
     detail: "Advisor: Prof. Jie Zou · GPA: 3.82 / 4.00"
     mentor_url: https://scholar.google.com/citations?user=LdqJFMIAAAAJ
   - name: Beijing Forestry University
     short_name: BJFU
+    logo: /assets/images/logos/bjfu.svg
+    logo_key: bjfu
     position: Bachelor's degree in Information Management and Information Systems
     date: Sep. 2020 – Jul. 2024
     detail: "Class rank: 4 / 28"
 experience:
   - name: Tencent Ads
     short_name: Tencent
+    logo: /assets/images/logos/tencent.png
+    logo_key: tencent
     position: Research Intern · Generative Recommendation
     date: May 2026 – Present
     dept: Basic Research Center, Commercial Recommendation Department
@@ -48,8 +57,11 @@ experience:
       Working on efficient generative recommendation architectures, model scaling, and
       reinforcement learning post-training for advertising recommendation.
     mentor_url: https://scholar.google.com/citations?user=aKJaW7cAAAAJ
+    mentor_name: Xingxuan Zhou
   - name: JD.com
     short_name: JD.com
+    logo: /assets/images/logos/jd.png
+    logo_key: jd
     position: Algorithm Intern · Generative Recommendation
     date: Nov. 2025 – May 2026
     dept: Generative AI Applications, Search and Recommendation
@@ -57,6 +69,7 @@ experience:
       Worked on semantic ID construction, supervised fine-tuning, adaptive reinforcement
       learning, and model architectures for feed recommendation.
     mentor_url: https://scholar.google.com/citations?user=pkY_HogAAAAJ
+    mentor_name: Yanyan Zou
 awards:
   - name: "WWW 2025 AgentSociety Challenge · Recommendation Track"
     detail: "1st place / 295"

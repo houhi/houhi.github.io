@@ -22,3 +22,4 @@ exclude:
   - scripts
   - node_modules
   - AGENTS.md
+  - ASSET_SOURCES.md
