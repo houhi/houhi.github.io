@@ -8,8 +8,8 @@ The user chose `luost26/academic-homepage` (template option 3) and supplied thei
 - Existing default branch: `master`.
 - Last observed remote head: `705acba0074e705f55da5663dfbfefe67053cf34`.
 - Public URL: `https://houhi.github.io/`.
-- The remote still contains the previous Academic Pages template. No remote changes were made.
-- The ChatGPT GitHub connection successfully reads this repository, but branch creation returned HTTP 403, `Resource not accessible by integration`. Use a supported Codex GitHub write connection.
+- At the start of this handoff the remote contained the previous Academic Pages template. The resumed publication branch now contains the replacement; inspect the PR and Pages status before making further changes.
+- The ChatGPT GitHub connection previously denied writes with HTTP 403, `Resource not accessible by integration`. GitHub CLI browser authentication is now complete for `houhi`, with credentials stored in the macOS keyring. Use the authenticated CLI for writes.
 - This local repository is an independent checkpoint of the new source, not a clone of the existing remote history. Do not force-push this root commit to the existing repository.
 
 ## Resumed preparation (2026-11-03)
@@ -19,8 +19,8 @@ The user chose `luost26/academic-homepage` (template option 3) and supplied thei
 - A genuine `bundle exec jekyll build --trace` passed with GitHub Pages 232 / Jekyll 3.10.0 and Ruby 3.4.5. The lockfile includes macOS and Linux platforms.
 - Browser QA passed for home, publications, and CV navigation; desktop layout and 390px mobile widths were checked, with no horizontal overflow or console errors. All four generated HTML pages passed internal link, asset, fragment, heading, and image-alt checks.
 - System Ruby 2.6 cannot resolve current dependencies. A standalone Ruby is available at `/Users/rocwelzhang/.cache/codex-tools/ruby/portable-ruby/3.4.5/bin/`; use it through PATH. Dependencies are installed in the publication clone under ignored `vendor/bundle/`.
-- GitHub CLI is available at `/Users/rocwelzhang/.cache/codex-tools/v2.103.3/gh`. The Git push dry run failed before authentication: `fatal: unable to get password from user`. Browser device authorization has been started; check `gh auth status` before publishing.
-- Public site still serves the old template. No remote writes have been made during this resumed preparation. Do not report the new site as live until publication succeeds.
+- GitHub CLI is available at `/Users/rocwelzhang/.cache/codex-tools/v2.103.3/gh`. An initial unauthenticated push dry run failed; the user then completed official browser device authorization. `gh auth status` confirms the active account is `houhi`.
+- The publication branch was pushed successfully. GitHub Pages is configured for the root of `master` (`build_type: legacy`). Merge the publication PR and verify its Pages build and public content before reporting the new site as live.
 
 ## Continue publishing
 
