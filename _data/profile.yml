@@ -12,23 +12,23 @@ positions:
   - name: University of Electronic Science and Technology of China
 research_interests:
   - Generative Recommendation
-  - LLMs for Recommendation
-  - Personalized Agents
+  - Conversational Recommendation
+  - Agentic Recommendation
 short_bio: >-
   <p>I am a master's student in Computer Science and Technology at the
   <a href="https://www.uestc.edu.cn/">University of Electronic Science and Technology of China (UESTC)</a>,
   advised by <a href="https://scholar.google.com/citations?user=LdqJFMIAAAAJ">Prof. Jie Zou</a>.
-  I received my bachelor's degree in Information Management and Information Systems from
+  I received my bachelor's degree from
   <a href="https://www.bjfu.edu.cn/">Beijing Forestry University</a> in 2024.</p>
-  <p>My research focuses on <strong>generative recommendation</strong> and
-  <strong>LLM-based recommender systems</strong>. I am particularly interested in semantic IDs,
-  efficient model architectures, reinforcement learning post-training, and personalized multi-agent systems.</p>
+  <p>My research focuses on <strong>LLM-based recommender systems</strong>.
+  I am particularly interested in <strong>generative recommendation</strong>,
+  <strong>conversational recommendation</strong>, and <strong>agentic recommendation</strong>.</p>
   <p>I am currently a research intern at <strong>Tencent Ads</strong>, mentored by
   <a href="https://scholar.google.com/citations?user=aKJaW7cAAAAJ">Xingxuan Zhou</a>.
-  Previously, I worked on generative recommendation at <strong>JD.com</strong>, mentored by
-  <a href="https://scholar.google.com/citations?user=pkY_HogAAAAJ">Yanyan Zou</a>.
-  My work connects academic research with
-  recommendation systems at an industrial scale.</p>
+  Previously, I was a research intern at <strong>JD.com</strong>, working with
+  <a href="https://scholar.google.com/citations?user=pkY_HogAAAAJ">Yanyan Zou</a> on generative recommendation.
+  Through these experiences, I explore how LLMs and intelligent agents can shape
+  the next generation of personalized recommender systems.</p>
 education:
   - name: University of Electronic Science and Technology of China
     short_name: UESTC
