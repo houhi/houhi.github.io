@@ -1,0 +1,10 @@
+<section class="card border-0 shadow-sm bg-white" aria-labelledby="about-heading">
+  <div class="card-body p-4 p-lg-5">
+    <p class="eyebrow">GENERATIVE RECOMMENDATION · LLM4REC</p>
+    <h2 id="about-heading" class="h3 mb-4">About Me</h2>
+    <div class="text-profile-bio">{{ site.data.profile.short_bio }}</div>
+    <div class="research-tags mt-4" aria-label="Research interests">
+      {% for interest in site.data.profile.research_interests %}<span>{{ interest }}</span>{% endfor %}
+    </div>
+  </div>
+</section>

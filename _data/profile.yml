@@ -1,0 +1,70 @@
+primary_name: Pengfei Zhang
+secondary_name: 张鹏飞
+navbar_name: Pengfei Zhang
+email: 1426999182@qq.com
+gscholar: c3YcWDQAAAAJ
+github: houhi
+orcid: 0009-0005-2665-5747
+portrait_url: /assets/images/profile.jpg
+cv_link: /cv/
+positions:
+  - name: M.S. Student · Computer Science
+  - name: University of Electronic Science and Technology of China
+research_interests:
+  - Generative Recommendation
+  - LLMs for Recommendation
+  - Personalized Agents
+short_bio: >-
+  <p>I am a master's student in Computer Science and Technology at the
+  <a href="https://www.uestc.edu.cn/">University of Electronic Science and Technology of China (UESTC)</a>,
+  advised by <a href="https://scholar.google.com/citations?user=LdqJFMIAAAAJ">Prof. Jie Zou</a>.
+  I received my bachelor's degree in Information Management and Information Systems from
+  <a href="https://www.bjfu.edu.cn/">Beijing Forestry University</a> in 2024.</p>
+  <p>My research focuses on <strong>generative recommendation</strong> and
+  <strong>LLM-based recommender systems</strong>. I am particularly interested in semantic IDs,
+  efficient model architectures, reinforcement learning post-training, and personalized multi-agent systems.</p>
+  <p>I am currently a research intern at <strong>Tencent Ads</strong>. Previously, I worked on
+  generative recommendation at <strong>JD.com</strong>. My work connects academic research with
+  recommendation systems at an industrial scale.</p>
+education:
+  - name: University of Electronic Science and Technology of China
+    short_name: UESTC
+    position: M.S. in Computer Science and Technology
+    date: Sep. 2024 – Jul. 2027 (expected)
+    detail: "Advisor: Prof. Jie Zou · GPA: 3.82 / 4.00"
+    mentor_url: https://scholar.google.com/citations?user=LdqJFMIAAAAJ
+  - name: Beijing Forestry University
+    short_name: BJFU
+    position: Bachelor's degree in Information Management and Information Systems
+    date: Sep. 2020 – Jul. 2024
+    detail: "Class rank: 4 / 28"
+experience:
+  - name: Tencent Ads
+    short_name: Tencent
+    position: Research Intern · Generative Recommendation
+    date: May 2026 – Present
+    dept: Basic Research Center, Commercial Recommendation Department
+    description: >-
+      Working on efficient generative recommendation architectures, model scaling, and
+      reinforcement learning post-training for advertising recommendation.
+    mentor_url: https://scholar.google.com/citations?user=aKJaW7cAAAAJ
+  - name: JD.com
+    short_name: JD.com
+    position: Algorithm Intern · Generative Recommendation
+    date: Nov. 2025 – May 2026
+    dept: Generative AI Applications, Search and Recommendation
+    description: >-
+      Worked on semantic ID construction, supervised fine-tuning, adaptive reinforcement
+      learning, and model architectures for feed recommendation.
+    mentor_url: https://scholar.google.com/citations?user=pkY_HogAAAAJ
+awards:
+  - name: "WWW 2025 AgentSociety Challenge · Recommendation Track"
+    detail: "1st place / 295"
+    date: "2025"
+  - name: "Tencent Ads Generative Recommendation Algorithm Competition"
+    detail: "Rank 42 / 1,334"
+    date: "2025"
+  - name: "CAAI National Big Data and Social Computing Conference · Agent Design Challenge"
+    detail: Second Prize
+    date: "2025"
+languages: "English: IELTS 7.0, CET-6 591 · Japanese: JLPT N2, 153 / 180"

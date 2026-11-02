@@ -1,0 +1,17 @@
+{% assign item = include.item %}
+<article class="publication-item p-4 {% unless include.hide_bottom_border %}border-bottom{% endunless %}">
+  <div class="publication-tile {{ item.tile_class }}" aria-hidden="true">
+    <span class="tile-kicker">{{ item.tile_topic }}</span>
+    <strong>{{ item.acronym }}</strong>
+    <span>{{ item.tile_caption }}</span>
+  </div>
+  <div class="publication-content">
+    <p class="publication-venue mb-2">{{ item.pub }} <span class="venue-year">{{ item.year }}</span></p>
+    <h3 class="h6 publication-title"><a href="{{ item.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h3>
+    <p class="small mb-2 publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>
+    <p class="small text-muted mb-2">{{ item.abstract }}</p>
+    <div class="paper-links small">
+      {% for link in item.links %}{% assign link_start = link[1] | slice: 0, 1 %}<a href="{% if link_start == '/' %}{{ link[1] | relative_url }}{% else %}{{ link[1] }}{% endif %}" target="_blank" rel="noopener noreferrer">{{ link[0] }} <span aria-hidden="true">↗</span></a>{% endfor %}
+    </div>
+  </div>
+</article>

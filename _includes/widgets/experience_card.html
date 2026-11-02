@@ -1,0 +1,28 @@
+<section class="card border-0 shadow-sm bg-white mt-3" aria-label="Education and experience">
+  <div class="card-body p-4">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="h6 section-label">Education</h2>
+        {% for item in site.data.profile.education %}
+        <div class="timeline-item">
+          <p class="timeline-date">{{ item.date }}</p>
+          <h3 class="h6 mb-1">{{ item.name }}</h3>
+          <p class="small mb-1">{{ item.position }}</p>
+          <p class="small text-muted mb-0">{{ item.detail }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="col-lg-6 mt-3 mt-lg-0">
+        <h2 class="h6 section-label">Experience</h2>
+        {% for item in site.data.profile.experience %}
+        <div class="timeline-item">
+          <p class="timeline-date">{{ item.date }}</p>
+          <h3 class="h6 mb-1">{{ item.name }}</h3>
+          <p class="small mb-1">{{ item.position }}</p>
+          <a class="small" href="{{ item.mentor_url }}" target="_blank" rel="noopener noreferrer">Industry mentor <span aria-hidden="true">↗</span></a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

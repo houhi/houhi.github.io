@@ -1,0 +1,10 @@
+{% assign publications = include.publications %}
+<section class="my-3 p-0 bg-white shadow-sm rounded-xl" aria-labelledby="selected-heading">
+  <div class="section-heading p-3 border-bottom">
+    <h2 id="selected-heading" class="h6 mb-0">Selected Publications</h2>
+    <a class="small" href="{{ '/publications/' | relative_url }}">View all <span aria-hidden="true">→</span></a>
+  </div>
+  {% for item in publications %}
+    {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last %}
+  {% endfor %}
+</section>

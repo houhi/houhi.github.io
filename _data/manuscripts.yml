@@ -1,0 +1,9 @@
+- title: A Mixed-Visibility Token–Channel Mixer for Generative Recommendation
+  status: Under review
+  description: Efficient architectures for generative recommendation.
+- title: Adaptive Loss Balancing for Noise-Robust GRPO in Generative Recommendation
+  status: Under review
+  description: Adaptive reinforcement learning post-training for recommendation.
+- title: Two-Stage Candidate-Aware Cascade Reranking for Information Diffusion Prediction
+  status: Under review
+  description: Candidate-aware reranking for information diffusion prediction.
