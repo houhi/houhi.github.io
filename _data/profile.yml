@@ -36,7 +36,6 @@ education:
     logo_key: uestc
     position: M.S. in Computer Science and Technology
     date: Sep. 2024 – Jul. 2027 (expected)
-    detail: "Advisor: Prof. Jie Zou · GPA: 3.82 / 4.00"
     mentor_url: https://scholar.google.com/citations?user=LdqJFMIAAAAJ
   - name: Beijing Forestry University
     short_name: BJFU
@@ -44,13 +43,13 @@ education:
     logo_key: bjfu
     position: Bachelor's degree in Information Management and Information Systems
     date: Sep. 2020 – Jul. 2024
-    detail: "Class rank: 4 / 28"
 experience:
   - name: Tencent Ads
     short_name: Tencent
     logo: /assets/images/logos/tencent.png
     logo_key: tencent
     position: Research Intern · Generative Recommendation
+    scenario: Advertising on WeChat Channels, Moments, and Mini Programs
     date: May 2026 – Present
     dept: Basic Research Center, Commercial Recommendation Department
     description: >-
@@ -63,6 +62,7 @@ experience:
     logo: /assets/images/logos/jd.png
     logo_key: jd
     position: Algorithm Intern · Generative Recommendation
+    scenario: JD.com homepage feed recommendation
     date: Nov. 2025 – May 2026
     dept: Generative AI Applications, Search and Recommendation
     description: >-
