@@ -1,0 +1,27 @@
+---
+layout: default
+title: Academic Homepage
+navbar_title: Home
+---
+<div class="row">
+  <div class="col-lg-3 col-md-4 mb-3 mb-md-0">
+    {% include widgets/profile_card_mini.html %}
+  </div>
+  <div class="col-lg-9 col-md-8">
+    {% include widgets/profile_card_bio_only.html %}
+    {% include widgets/experience_card.html %}
+    {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+    {% assign pubs = site.publications | sort: 'date' | reverse | where: 'selected', true %}
+    {% include widgets/publication_card.html publications=pubs %}
+    <section class="card border-0 shadow-sm bg-white mt-3" aria-labelledby="awards-heading">
+      <div class="card-body p-4">
+        <h2 id="awards-heading" class="h6 mb-3">Selected Honors &amp; Awards</h2>
+        <ul class="awards-list list-unstyled mb-0">
+          {% for item in site.data.profile.awards %}
+          <li><div><strong class="small">{{ item.detail }}</strong><div class="small text-muted">{{ item.name }}</div></div><span class="small text-muted">{{ item.date }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<aside class="card border-0 shadow-sm bg-white profile-card">
+  <div class="card-body px-4 pt-4 pb-4 text-center">
+    <img src="{{ site.data.profile.portrait_url | relative_url }}" class="portrait img-fluid" width="295" height="350" alt="Portrait of Pengfei Zhang">
+    <h1 class="h4 mt-3 mb-1">{{ site.data.profile.primary_name }}</h1>
+    <p class="chinese-name text-muted mb-3" lang="zh-CN">{{ site.data.profile.secondary_name }}</p>
+    <div class="small text-profile-position">
+      {% for position in site.data.profile.positions %}<p class="mb-2">{{ position.name }}</p>{% endfor %}
+    </div>
+    <hr>
+    <a class="email-text small" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email | replace: '@', ' (at) ' }}</a>
+    <div class="profile-links mt-3">
+      <a href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}" target="_blank" rel="noopener noreferrer">Scholar <span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      <a href="https://orcid.org/{{ site.data.profile.orcid }}" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a>
+    </div>
+    <a class="btn btn-outline-primary btn-sm mt-3 cv-button" href="{{ site.data.profile.cv_link | relative_url }}">Curriculum Vitae</a>
+  </div>
+</aside>

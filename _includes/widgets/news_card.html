@@ -1,0 +1,12 @@
+{% assign news_items = site.news | sort: 'date' | reverse | slice: 0, include.limit %}
+<section class="my-3 bg-white shadow-sm rounded-xl" aria-labelledby="news-heading">
+  <h2 id="news-heading" class="h6 p-3 mb-0 border-bottom">News</h2>
+  <div class="px-4 py-2">
+    {% for item in news_items %}
+    <div class="news-item small">
+      <time class="text-muted" datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time>
+      <div>{{ item.content }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
