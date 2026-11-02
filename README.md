@@ -8,7 +8,7 @@ Adapted from [luost26/academic-homepage](https://github.com/luost26/academic-hom
 
 - 基本信息、简介、教育、实习、导师链接和奖项：`_data/profile.yml`
 - 已发表论文：`_publications/` 中的 Markdown 文件
-- 投稿中的工作：`_data/manuscripts.yml`
+- 投稿中的工作保留在 `_data/manuscripts.yml`，按用户要求不在网站或 CV 展示。
 - 新闻：`_news/` 中的 Markdown 文件
 - 照片：`assets/images/profile.jpg`
 - 导航：`_data/navigation.yml`
@@ -29,3 +29,7 @@ bundle exec jekyll serve
 ```
 
 访问终端显示的本地地址。修改 `_config.yml` 后需要重启预览服务。
+
+论文作者的公开展示顺序可使用 `display_authors` 单独设置；`authors` 和 BibTeX 保留出版元数据。RAMR 按作者本人说明标注共同第一作者，并将 Pengfei Zhang 放在展示列表首位。
+
+机构 logo 来自各机构官网，论文框架图来自作者提供的原始图或论文原文，均保留原机构和作者权利。

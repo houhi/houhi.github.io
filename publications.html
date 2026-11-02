@@ -19,16 +19,3 @@ permalink: /publications/
   </div>
 </section>
 {% endfor %}
-<section class="card border-0 shadow-sm mt-4 bg-white" aria-labelledby="manuscripts-heading">
-  <div class="card-body p-4">
-    <h2 id="manuscripts-heading" class="h5 mb-2">Manuscripts Under Review</h2>
-    <p class="small text-muted mb-4">These works are currently under review and are listed separately from published papers.</p>
-    {% for item in site.data.manuscripts %}
-    <article class="manuscript {% unless forloop.last %}mb-4{% endunless %}">
-      <p class="status-label mb-1">{{ item.status }}</p>
-      <h3 class="h6 mb-1">{{ item.title }}</h3>
-      <p class="small text-muted mb-0">{{ item.description }}</p>
-    </article>
-    {% endfor %}
-  </div>
-</section>

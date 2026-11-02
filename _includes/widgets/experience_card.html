@@ -6,7 +6,7 @@
         {% for item in site.data.profile.education %}
         <div class="timeline-item">
           <p class="timeline-date">{{ item.date }}</p>
-          <h3 class="h6 mb-1">{{ item.name }}</h3>
+          {% include widgets/organization_heading.html item=item %}
           <p class="small mb-1">{{ item.position }}</p>
           <p class="small text-muted mb-0">{{ item.detail }}</p>
         </div>
@@ -17,9 +17,9 @@
         {% for item in site.data.profile.experience %}
         <div class="timeline-item">
           <p class="timeline-date">{{ item.date }}</p>
-          <h3 class="h6 mb-1">{{ item.name }}</h3>
+          {% include widgets/organization_heading.html item=item %}
           <p class="small mb-1">{{ item.position }}</p>
-          <a class="small" href="{{ item.mentor_url }}" target="_blank" rel="noopener noreferrer">Industry mentor <span aria-hidden="true">↗</span></a>
+          <a class="small" href="{{ item.mentor_url }}" target="_blank" rel="noopener noreferrer">Mentor: {{ item.mentor_name }} <span aria-hidden="true">↗</span></a>
         </div>
         {% endfor %}
       </div>

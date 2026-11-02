@@ -5,6 +5,8 @@ year: 2026
 pub: "The Web Conference (WWW)"
 selected: true
 acronym: "EyeCRS"
+framework_image: /assets/images/publications/eyecrs-framework.png
+framework_alt: "EyeCRS framework: multi-agent debate selects useful historical dialogues for personalized conversational recommendation."
 tile_class: ""
 tile_topic: "Conversational recommendation"
 tile_caption: "Personalization through debate"

@@ -1,14 +1,22 @@
 {% assign item = include.item %}
 <article class="publication-item p-4 {% unless include.hide_bottom_border %}border-bottom{% endunless %}">
+  {% if item.framework_image %}
+  <a class="publication-figure" href="{{ item.framework_image | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ item.acronym }} framework at full size">
+    <img src="{{ item.framework_image | relative_url }}" alt="{{ item.framework_alt | escape }}" loading="lazy" decoding="async">
+    <span class="figure-label">{{ item.acronym }} · Framework <span aria-hidden="true">↗</span></span>
+  </a>
+  {% else %}
   <div class="publication-tile {{ item.tile_class }}" aria-hidden="true">
     <span class="tile-kicker">{{ item.tile_topic }}</span>
     <strong>{{ item.acronym }}</strong>
     <span>{{ item.tile_caption }}</span>
   </div>
+  {% endif %}
   <div class="publication-content">
     <p class="publication-venue mb-2">{{ item.pub }} <span class="venue-year">{{ item.year }}</span></p>
     <h3 class="h6 publication-title"><a href="{{ item.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h3>
-    <p class="small mb-2 publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>
+    {% assign display_authors = item.display_authors | default: item.authors %}
+    <p class="small mb-2 publication-authors">{% include widgets/author_list.html authors=display_authors co_first=item.co_first %}</p>
     <p class="small text-muted mb-2">{{ item.abstract }}</p>
     <div class="paper-links small">
       {% for link in item.links %}{% assign link_start = link[1] | slice: 0, 1 %}<a href="{% if link_start == '/' %}{{ link[1] | relative_url }}{% else %}{{ link[1] }}{% endif %}" target="_blank" rel="noopener noreferrer">{{ link[0] }} <span aria-hidden="true">↗</span></a>{% endfor %}
